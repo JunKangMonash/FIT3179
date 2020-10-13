@@ -14,7 +14,7 @@
     },
     {
       "data": {
-        "url": "https://raw.githubusercontent.com/KaneSec/vega_lite/main/2_symbol_map/data/earthquake.csv"
+        "url": "https://raw.githubusercontent.com/WongJunKang/FIT3179/main/map/data/earthquake.csv"
       },
       "encoding": {
         "longitude": {"field": "longitude", "type": "quantitative"},
