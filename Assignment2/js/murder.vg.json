@@ -22,7 +22,7 @@
     },
     {
       "data": {
-        "url": "data/airports.csv"
+        "url": "https://raw.githubusercontent.com/WongJunKang/FIT3179/main/Assignment2/data/Murder.csv"
       },
       "projection": {
         "type": "albersUsa"
