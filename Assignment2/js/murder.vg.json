@@ -12,7 +12,7 @@
         }
       },
       "projection": {
-        "type": "albersUsa"
+        "type": "equalEarth"
       },
       "mark": {
         "type": "geoshape",
@@ -25,16 +25,16 @@
         "url": "https://raw.githubusercontent.com/WongJunKang/FIT3179/main/Assignment2/data/Murder.csv"
       },
       "projection": {
-        "type": "albersUsa"
+        "type": "equalEarth"
       },
       "mark": "circle",
       "encoding": {
         "longitude": {
-          "field": "longitude",
+          "field": "Longitude",
           "type": "quantitative"
         },
         "latitude": {
-          "field": "latitude",
+          "field": "Latitude",
           "type": "quantitative"
         },
         "size": {"value": 10},
