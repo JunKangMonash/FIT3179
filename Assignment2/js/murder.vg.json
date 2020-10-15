@@ -37,7 +37,7 @@
           "field": "Latitude",
           "type": "quantitative"
         },
-        "size": {"value": 10},
+        "size": {"value": 30},
         "color": {"value": "steelblue"}
       }
     }
