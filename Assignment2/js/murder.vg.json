@@ -8,7 +8,7 @@
         "url": "data/us-10m.json",
         "format": {
           "type": "topojson",
-          "feature": "states"
+          "feature": "newyork"
         }
       },
       "projection": {
