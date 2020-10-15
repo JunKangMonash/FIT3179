@@ -38,7 +38,7 @@
           "type": "quantitative"
         },
         "size": {"value": 30},
-        "color": {"value": "steelblue"}
+        "color": {"value": "darkblue"}
       }
     }
   ]
