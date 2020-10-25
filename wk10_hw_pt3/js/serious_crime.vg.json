@@ -2,14 +2,34 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
   "description": "Serious Crime.",
   "data": { "url": "https://raw.githubusercontent.com/WongJunKang/FIT3179/main/wk10_hw_pt3/data/Serious_Crime_New.csv"},
-  "transform": [
+  "params": [
+ {
+ "name": "Crime_selection",
+ "bind": {
+ "input": "select",
+ "options": [
+ null,
+ "MURDER & NON-NEGL. MANSLAUGHTER",
+ "RAPE",
+ "ROBBERY"
+ ],
+ "labels":[
+ "Show All",
+ "Murder",
+ "Rape",
+ "Robbery"
+ ],
+ "name": "Crime Selection: "}
+ }
+ ],
+ "transform": [
     {"calculate": "datum.sex == 2 ? 'F' : 'M'", "as": "gender"}
   ],
   "spacing": 0,
   "hconcat": [{
-    "transform": [{
-      "filter": {"field": "PERP_SEX", "equal": "F"}
-    }],
+    "transform": [
+    {"filter": {"field": "PERP_SEX", "equal": "F"}},
+    {"filter": "Crime_selection == null || datum.OFNS_DESC == Crime_selection"}],
     "title": "Female",
     "width": 400,
     "height": 400,
@@ -29,9 +49,10 @@
         "field": "PERP_SEX",
         "scale": {"range": ["#675193", "#ca8861"]},
         "legend": null
-      }
-    }
-  }, {
+      },
+      "tooltip": [
+        {"aggregate": "count", "field": "ARREST_KEY", "type": "quantitative"}]
+      }}, {
     "width": 40,
     "height": 400,
     "view": {"stroke": null},
@@ -44,9 +65,9 @@
       "text": {"field": "AGE_GROUP", "type": "ordinal"}
     }
   }, {
-    "transform": [{
-      "filter": {"field": "PERP_SEX", "equal": "M"}
-    }],
+    "transform": [
+      {"filter": {"field": "PERP_SEX", "equal": "M"}},
+      {"filter": "Crime_selection == null || datum.OFNS_DESC == Crime_selection"}],
     "title": "Male",
     "width": 400,
     "height": 400,
@@ -65,7 +86,9 @@
       "color": {
         "field": "gender",
         "legend": null
-      }
+      },
+      "tooltip": [
+        {"aggregate": "count", "field": "ARREST_KEY", "type": "quantitative"}]
     }
   }],
   "config": {
