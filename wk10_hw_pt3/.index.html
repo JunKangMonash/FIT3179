@@ -15,15 +15,15 @@
 
 <h1>An Example of Multiple Visualisations</h1>
 
-<h2>This is the first visualisation</h2>
+<h2>Crime Distribution Across New York</h2>
 <div id="dot_map"></div>
 
-<h2>This is the second visualisation</h2>
+<h2>Female Vs Male</h2>
 <div id="population_pyramid"></div>
 
 <script type="text/javascript">
   
-  var vis1 = "https://raw.githubusercontent.com/WongJunKang/FIT3179/main/wk9_hw_pt2/js/murder.vg.json";
+  var vis1 = "js/murder.vg.json";
   
   vegaEmbed('#dot_map', vis1).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
