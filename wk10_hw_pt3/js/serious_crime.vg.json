@@ -1,0 +1,75 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "description": "Serious Crime.",
+  "data": { "url": "https://raw.githubusercontent.com/WongJunKang/FIT3179/main/wk10_hw_pt3/data/Serious_Crime_New.csv"},
+  "transform": [
+    {"calculate": "datum.sex == 2 ? 'F' : 'M'", "as": "gender"}
+  ],
+  "spacing": 0,
+  "hconcat": [{
+    "transform": [{
+      "filter": {"field": "PERP_SEX", "equal": "F"}
+    }],
+    "title": "Female",
+    "width": 400,
+    "height": 400,
+    "mark": "bar",
+    "encoding": {
+      "y": {
+        "field": "AGE_GROUP", "axis": null, "sort": ["65+", "45-64", "25-44", "18-24", "<18"]
+      },
+      "x": {
+        "aggregate": "count", "field": "ARREST_KEY",
+        "title": "crime count",
+        "axis": {"format": "s"},
+        "scale": {"domain": [0,13000]} ,
+        "sort": "descending"
+      },
+      "color": {
+        "field": "PERP_SEX",
+        "scale": {"range": ["#675193", "#ca8861"]},
+        "legend": null
+      }
+    }
+  }, {
+    "width": 40,
+    "height": 400,
+    "view": {"stroke": null},
+    "mark": {
+      "type": "text",
+      "align": "center"
+    },
+    "encoding": {
+      "y": {"field": "AGE_GROUP", "type": "ordinal", "axis": null, "sort": ["65+", "45-64", "25-44", "18-24", "<18"]},
+      "text": {"field": "AGE_GROUP", "type": "ordinal"}
+    }
+  }, {
+    "transform": [{
+      "filter": {"field": "PERP_SEX", "equal": "M"}
+    }],
+    "title": "Male",
+    "width": 400,
+    "height": 400,
+    "mark": "bar",
+    "encoding": {
+      "y": {
+        "field": "AGE_GROUP", "title": null,
+        "axis": null, "sort": ["65+", "45-64", "25-44", "18-24", "<18"]
+      },
+      "x": {
+        "aggregate": "count", "field": "people",
+        "title": "crime count",
+        "axis": {"format": "s"},
+        "scale": {"domain": [0,13000]} 
+      },
+      "color": {
+        "field": "gender",
+        "legend": null
+      }
+    }
+  }],
+  "config": {
+    "view": {"stroke": null},
+    "axis": {"grid": false}
+  }
+}
