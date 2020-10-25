@@ -23,7 +23,7 @@
     },
     {
       "data": {
-        "url": "https://raw.githubusercontent.com/WongJunKang/FIT3179/main/wk9_hw_pt2/data/Murder.csv"
+        "url": "https://raw.githubusercontent.com/WongJunKang/FIT3179/main/wk10_hw_pt3/data/Murder.csv"
       },
       "projection": {
         "type": "equalEarth"
