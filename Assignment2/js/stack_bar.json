@@ -1,0 +1,13 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "data": {"url": "https://raw.githubusercontent.com/WongJunKang/FIT3179/main/Assignment2/data/Serious_Crime.csv"},
+  "mark": "bar",
+  "encoding": {
+    "x": {"aggregate": "count", "title":"Offence Counts"},
+    "y": {"field": "PERP_RACE", "title":"Offence Type","sort": ["BLACK", "WHITE HISPANIC", "WHITE", "BLACK HISPANIC", "ASIAN / PACIFIC ISLANDER", "AMERICAN INDIAN/ALASKAN NATIVE", "OTHER", "UNKNOWN" ]},
+    "color": {"field": "PERP_SEX", "scale": {"range": ["#EC7063", "#566573"]}, "legend":{"title": "Biological Sex" }},
+          "tooltip": [
+        {"field": "PERP_SEX", "type": "nominal", "title":"Biological Sex: "},
+        {"aggregate": "count", "type": "quantitative", "title":"Offence Counts"}]
+  }
+}
