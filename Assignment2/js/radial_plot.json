@@ -1,6 +1,8 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
   "description": "A simple radial chart with embedded data.",
+  "width":300,
+  "height":300,
   "data": {
       "url": "https://raw.githubusercontent.com/WongJunKang/FIT3179/main/Assignment2/data/Serious_Crime.csv"
     },
@@ -9,7 +11,7 @@
   },{
     "mark": {"type": "text", "radiusOffset": 30},
     "encoding": {
-      "text": {"field": "OFNS_DESC", "type": "nominal"}
+      "text": {}
     }
   }],
   "encoding": {
