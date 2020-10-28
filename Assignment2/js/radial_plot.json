@@ -1,0 +1,24 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "description": "A simple radial chart with embedded data.",
+  "data": {
+      "url": "https://raw.githubusercontent.com/WongJunKang/FIT3179/main/Assignment2/data/Serious_Crime.csv"
+    },
+  "layer": [{
+    "mark": {"type": "arc", "innerRadius": 20, "stroke": "#fff"}
+  },{
+    "mark": {"type": "text", "radiusOffset": 30},
+    "encoding": {
+      "text": {"field": "OFNS_DESC", "type": "nominal"}
+    }
+  }],
+  "encoding": {
+    "theta": {"aggregate":"count", "field": "ARREST_KEY", "type": "quantitative", "stack": true},
+    "radius": {"aggregate":"count", "field": "ARREST_KEY", "scale": {"type": "sqrt", "zero": true, "rangeMin": 20}},
+    "color": {"title": "Crime", "field": "OFNS_DESC", "type": "nominal", "scale": {"range": ["#17202A","#76C8AE","#C42525", "#000000","#F7DC6F"]}, "legend":null},
+    "tooltip": [
+      {"field": "OFNS_DESC", "type": "nominal", "title": "Offence Type"},
+      {"aggregate": "count", "type": "quantitative", "title": "Offence Counts"}]
+  },
+  "view": {"stroke": null}
+}
