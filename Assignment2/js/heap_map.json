@@ -1,0 +1,47 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "width": 250, "height": 200,
+  "data": {
+      "url": "https://raw.githubusercontent.com/WongJunKang/FIT3179/main/Assignment2/data/Serious_Crime.csv"
+  },
+  "title": "Offence Count of Year by Month",
+  "config": {
+      "view": {
+          "strokeWidth": 0,
+          "step": 13
+      },
+      "axis": {
+          "domain": false
+      }
+  },
+  "mark": "rect",
+  "encoding": {
+      "x": {
+          "field": "ARREST_DATE",
+          "timeUnit": "month",
+          "type": "ordinal",
+          "title": "Month",
+          "axis": {
+              "labelAngle": 0
+          }
+      },
+      "y": {
+          "field": "ARREST_DATE",
+          "timeUnit": "year",
+          "type": "ordinal",
+          "title": "Year"
+      },
+      "color": {
+          "field": "ARREST_KEY",
+          "aggregate": "count",
+          "type": "quantitative",
+          "scale": {"range": ["#FFFF00", "#FFA500", "#ff7300", "#ff3300", "#e60000"]},
+          "legend": {
+              "title": null
+          }
+      },
+      "tooltip": [
+        {"field": "ARREST_DATE","timeUnit":"yearmonth","type": "ordinal", "title":"Arrest Year/Month"},
+        {"aggregate": "count","type": "quantitative", "title":"Offence Counts"}]
+  }
+}
