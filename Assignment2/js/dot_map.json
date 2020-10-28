@@ -1,0 +1,84 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "title": "Serious Crimes In New York from Jan 2006 to Dec 2018 (1 dot = 1 crime)",
+  "width": 800,
+  "height": 500,
+  "params": [ {
+  "name": "Crime_selection",
+  "bind": {
+  "input": "select",
+  "options": [
+    null,
+    "MURDER & NON-NEGL. MANSLAUGHTER",
+    "RAPE",
+    "THEFT-FRAUD",
+    "KIDNAPPING & RELATED OFFENSES",
+    "ARSON"
+    ],
+    "labels":[
+    "Show All",
+    "Murder",
+    "Rape",
+    "Theft-Fraud",
+    "Kidnapping",
+    "Arson"
+  ],
+  "name": "Crime Selection: "}
+  },
+  {
+ "name": "yearAbove",
+ "value": 2006,
+ "bind": {
+ "input": "range",
+ "min": 2006,
+ "max": 2018,
+ "step": 1,
+ "name": "Year Onwards: "
+ }
+ }
+],
+  "layer": [
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/WongJunKang/FIT3179/main/wk9_hw_pt2/js/newyork.topojson",
+        "format": {
+          "type": "topojson",
+          "feature": "newyork"
+        }
+      },
+      "projection": {
+        "type": "equalEarth"
+      },
+      "mark": {
+        "type": "geoshape",
+        "fill": "lightgrey",
+        "stroke": "black"
+      }
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/WongJunKang/FIT3179/main/Assignment2/data/Serious_Crime.csv"
+      },
+      "projection": {
+        "type": "equalEarth"
+      },
+      "mark": "circle",
+      "encoding": {
+        "longitude": {
+          "field": "Longitude",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field": "Latitude",
+          "type": "quantitative"
+        },
+        "size": {"value": 3},
+        "color": {"value":"darkred"}
+      },
+      "transform": [
+        {"filter": "Crime_selection == null || datum.OFNS_DESC == Crime_selection"},
+        {"filter": {"timeUnit": "year", "field": "ARREST_DATE", "gte": "yearAbove"}}
+        ]
+    }
+  ]
+}
