@@ -1,0 +1,104 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "description": "Serious Crime.",
+  "data": { "url": "https://raw.githubusercontent.com/WongJunKang/FIT3179/main/Assignment2/data/Serious_Crime.csv"},
+  "params": [
+ {
+ "name": "Crime_selection",
+ "bind": {
+ "input": "select",
+ "options": [
+ null,
+ "MURDER & NON-NEGL. MANSLAUGHTER",
+ "RAPE",
+ "THEFT-FRAUD",
+ "KIDNAPPING & RELATED OFFENSES",
+ "ARSON"
+ ],
+ "labels":[
+ "Show All",
+ "Murder",
+ "Rape",
+ "Theft-Fraud",
+ "Kidnapping",
+ "Arson"
+ ],
+ "name": "Crime Selection: "}
+ }
+ ],
+ "transform": [
+    {"calculate": "datum.sex == 2 ? 'F' : 'M'", "as": "gender"}
+  ],
+  "spacing": 0,
+  "hconcat": [{
+    "transform": [
+    {"filter": {"field": "PERP_SEX", "equal": "F"}},
+    {"filter": "Crime_selection == null || datum.OFNS_DESC == Crime_selection"}],
+    "title": {"text": "Female", "fontSize": 20, "color":"#EC7063"},
+    "width": 400,
+    "height": 400,
+    "mark": "bar",
+    "encoding": {
+      "y": {
+        "field": "AGE_GROUP", "axis": null, "sort": ["65+", "45-64", "25-44", "18-24", "<18"]
+      },
+      "x": {
+        "aggregate": "count", "field": "ARREST_KEY",
+        "title": "crime count",
+        "axis": {"format": "s", "titleFontSize":15},
+        "scale": {"domain": [0,15000]} ,
+        "sort": "descending"
+      },
+      "color": {
+        "field": "PERP_SEX",
+        "scale": {"range": ["#EC7063", "#566573"]},
+        "legend": null
+      },
+      "tooltip": [
+        {"field": "PERP_SEX", "type": "nominal", "title":"Biological Sex: "},
+        {"aggregate": "count", "type": "quantitative", "title":"Offence Counts"}]
+      }}, {
+    "width": 40,
+    "height": 400,
+    "view": {"stroke": null},
+    "mark": {
+      "type": "text",
+      "align": "center"
+    },
+    "encoding": {
+      "y": {"field": "AGE_GROUP", "type": "ordinal", "axis": null, "sort": ["65+", "45-64", "25-44", "18-24", "<18"]},
+      "text": {"field": "AGE_GROUP", "type": "ordinal"}
+    }
+  }, {
+    "transform": [
+      {"filter": {"field": "PERP_SEX", "equal": "M"}},
+      {"filter": "Crime_selection == null || datum.OFNS_DESC == Crime_selection"}],
+    "title": {"text":"Male", "fontSize":20, "color":"#566573"},
+    "width": 400,
+    "height": 400,
+    "mark": "bar",
+    "encoding": {
+      "y": {
+        "field": "AGE_GROUP", "title": null,
+        "axis": null, "sort": ["65+", "45-64", "25-44", "18-24", "<18"]
+      },
+      "x": {
+        "aggregate": "count", "field": "people",
+        "title": "crime count",
+        "axis": {"format": "s", "titleFontSize":15},
+        "scale": {"domain": [0,15000]} 
+      },
+      "color": {
+        "field": "gender",
+        "legend": null
+      },
+      "tooltip": [
+        {"field": "PERP_SEX", "type": "nominal", "title":"Biological Sex: "},
+        {"aggregate": "count", "type": "quantitative", "title":"Offence Counts"}]
+    }
+  }],
+  "config": {
+    "view": {"stroke": null},
+    "axis": {"grid": false}
+  }
+}
