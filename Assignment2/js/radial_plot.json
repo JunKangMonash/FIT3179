@@ -1,8 +1,9 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
   "description": "A simple radial chart with embedded data.",
-  "width":300,
-  "height":300,
+  "title": {"text":"Distribution by Offence Types", "fontSize":20},
+  "width":400,
+  "height":400,
   "data": {
       "url": "https://raw.githubusercontent.com/WongJunKang/FIT3179/main/Assignment2/data/Serious_Crime.csv"
     },
