@@ -35,7 +35,7 @@
           "field": "ARREST_KEY",
           "aggregate": "count",
           "type": "quantitative",
-          "scale": {"range": ["#FFFF00", "#FFA500", "#ff7300", "#ff3300", "#e60000"]},
+          "scale": {"range": ["#FFFFFF", "#ff3300", "#000000" ]},
           "legend": {
               "title": null
           }
