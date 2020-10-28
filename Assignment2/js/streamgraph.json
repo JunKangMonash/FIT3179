@@ -33,7 +33,7 @@
       "axis": null,
       "stack": "center"
     },
-    "color": {"field":"OFNS_DESC", "scale": {"range": ["#CACFD2","#76C8AE","#C42525", "#000000","#F7DC6F"]}},
+    "color": {"field":"OFNS_DESC", "scale": {"range": ["#CACFD2","#76C8AE","#C42525", "#000000","#F7DC6F"]}, "legend":{"title":"Offence Types","orient": "left"}},
     "opacity": {"condition": {"selection": "crime_highlight", "value": 1},"value": 0.2},
 
       "tooltip": [
