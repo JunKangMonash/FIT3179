@@ -1,10 +1,10 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-  "width": 250, "height": 200,
+  "width": 300, "height": 300,
   "data": {
       "url": "https://raw.githubusercontent.com/WongJunKang/FIT3179/main/Assignment2/data/Serious_Crime.csv"
   },
-  "title": "Offence Count of Year by Month",
+  "title": {"text":"Offence Count of Year by Month", "fontSize":20},
   "config": {
       "view": {
           "strokeWidth": 0,
@@ -22,14 +22,22 @@
           "type": "ordinal",
           "title": "Month",
           "axis": {
-              "labelAngle": 0
+              "labelAngle": 0,
+              "labelFontSize":15,
+              "titleFontSize":15
           }
       },
       "y": {
           "field": "ARREST_DATE",
           "timeUnit": "year",
           "type": "ordinal",
-          "title": "Year"
+          "title": "Year",
+          "axis": {
+              "labelAngle": 0,
+              "labelFontSize":15,
+              "titleFontSize":15,
+              "labelSeparation":20
+          }
       },
       "color": {
           "field": "ARREST_KEY",
