@@ -36,7 +36,7 @@
     {"filter": {"field": "PERP_SEX", "equal": "F"}},
     {"filter": "Crime_selection == null || datum.OFNS_DESC == Crime_selection"}],
     "title": {"text": "Female", "fontSize": 20, "color":"#EC7063"},
-    "width": 500,
+    "width": 750,
     "height": 400,
     "mark": "bar",
     "encoding": {
@@ -76,7 +76,7 @@
       {"filter": {"field": "PERP_SEX", "equal": "M"}},
       {"filter": "Crime_selection == null || datum.OFNS_DESC == Crime_selection"}],
     "title": {"text":"Male", "fontSize":20, "color":"#566573"},
-    "width": 500,
+    "width": 750,
     "height": 400,
     "mark": "bar",
     "encoding": {
