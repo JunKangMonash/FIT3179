@@ -17,8 +17,9 @@
       {"label": "2018", "amount": 0}
     ]
   },
+  "title":{"text":"Offence Counts of Serious Crime Between Year 2006 to Year 2018", "fontSize":20},
   "width": 1000,
-  "height": 450,
+  "height": 600,
   "transform": [
     {"window": [{"op": "sum", "field": "amount", "as": "sum"}]},
     {"window": [{"op": "lead", "field": "label", "as": "lead"}]},
@@ -53,7 +54,7 @@
       "field": "label",
       "type": "ordinal",
       "sort": null,
-      "axis": {"labelAngle": 0, "title": "Year"}
+      "axis": {"labelAngle": 0, "title": "Year", "titleFontSize":15, "labelFontSize":15}
     }
   },
   "layer": [
@@ -64,6 +65,7 @@
           "field": "previous_sum",
           "type": "quantitative",
           "title": "Offence Counts",
+          "axis": {"labelAngle": 0, "title": "Offence Counts", "titleFontSize":15, "labelFontSize":15,"gridColor":"white", "labelSeparation":30},
           "scale": {"domain": [0,3600]}
         },
         "y2": {"field": "sum"},
@@ -71,7 +73,7 @@
           "condition": [
             {
               "test": "datum.label === '2006' || datum.label === '2018'",
-              "value": "#f7e0b6"
+              "value": "#D3D3D3"
             },
             {"test": "datum.sum < datum.previous_sum", "value": "#93c4aa"}
           ],
