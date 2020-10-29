@@ -1,8 +1,10 @@
+  
 {
+    "title":{"text": "Offence Counts by Biological Sex and Age Group", "fontSize":20, "dx":500},
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
   "description": "Serious Crime.",
+  
   "data": { "url": "https://raw.githubusercontent.com/WongJunKang/FIT3179/main/Assignment2/data/Serious_Crime.csv"},
-  "title":{"text": "Offence Counts by Biological Sex and Age Group", "fontSize":20},
   "params": [
  {
  "name": "Crime_selection",
