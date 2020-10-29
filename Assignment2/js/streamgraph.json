@@ -1,27 +1,46 @@
+
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-  "description": "A simple radial chart with embedded data.",
-  "title": {"text":"Distribution of Offence Types", "fontSize":20},
-  "width":300,
-  "height":300,
-  "data": {
-      "url": "https://raw.githubusercontent.com/WongJunKang/FIT3179/main/Assignment2/data/Serious_Crime.csv"
+  "width": 800, "height": 300,
+  "title":{"text":"Distribution of Criminal Offences From Jan 2006 to Dec 2018", "fontSize":20},
+  "data": {"url": "https://raw.githubusercontent.com/WongJunKang/FIT3179/main/Assignment2/data/Serious_Crime.csv"},
+  "params": [ {
+      "name": "yearAbove",
+      "value": 2006,
+      "bind": {
+      "input": "range",
+      "min": 2006,
+      "max": 2018,
+      "step": 1,
+      "name": "Year Onwards: "
+ }
+ }],
+ "transform": [{"filter": {"timeUnit": "year", "field": "ARREST_DATE", "gte": "yearAbove"}}
+],
+   "selection": {
+      "crime_highlight": {
+      "type": "multi",
+      "fields": ["OFNS_DESC"],
+      "bind": "legend"
+      }
     },
-  "layer": [{
-    "mark": {"type": "arc", "innerRadius": 20, "stroke": "#fff"}
-  },{
-    "mark": {"type": "text", "radiusOffset": 30},
-    "encoding": {
-      "text": {}
-    }
-  }],
+  "mark": "area",
   "encoding": {
-    "theta": {"aggregate":"count", "field": "ARREST_KEY", "type": "quantitative", "stack": true},
-    "radius": {"aggregate":"count", "field": "ARREST_KEY", "scale": {"type": "sqrt", "zero": true, "rangeMin": 20}},
-    "color": {"title": "Crime", "field": "OFNS_DESC", "type": "nominal",  "scale": {"range": ["#F7DC6F","#6D7FB7","#8b0000", "#000000","#CACFD2"]}, "legend":null},
-    "tooltip": [
+    "x": {
+      "timeUnit": "yearmonth", "field": "ARREST_DATE", 
+      "axis": {"domain": false, "format": "%Y", "tickSize": 0, "title":"Year/Month"}
+    },
+    "y": {
+      "aggregate": "count", "field": "ARREST_KEY",
+      "axis": null,
+      "stack": "center"
+    },
+    "color": {"field":"OFNS_DESC", "scale": {"range": ["#F7DC6F","#F1948A ","#8b0000", "#000000","#CACFD2"]}, "legend":{"title":"Offence Types","orient": "left"}},
+    "opacity": {"condition": {"selection": "crime_highlight", "value": 1},"value": 0.2},
+
+      "tooltip": [
       {"field": "OFNS_DESC", "type": "nominal", "title": "Offence Type"},
+      {"field": "ARREST_DATE", "timeUnit":"yearmonth", "type": "ordinal", "title": "Arrest Date"},
       {"aggregate": "count", "type": "quantitative", "title": "Offence Counts"}]
-  },
-  "view": {"stroke": null}
+  }
 }
