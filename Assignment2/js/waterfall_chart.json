@@ -19,7 +19,7 @@
   },
   "title":{"text":"Offence Counts of Serious Crime Between Year 2006 to Year 2018", "fontSize":20},
   "width": 935,
-  "height": 900,
+  "height": 850,
   "transform": [
     {"window": [{"op": "sum", "field": "amount", "as": "sum"}]},
     {"window": [{"op": "lead", "field": "label", "as": "lead"}]},
