@@ -18,9 +18,9 @@
     *{
       font-family: 'Source Sans Pro', sans-serif;
     }
-    div {
-    text-align: justify;
-    text-justify: inter-word;
+    p{
+      margin-left: 20px;
+      margin-right: 20px;
     }
     img{
         padding-left: 30px;
@@ -33,14 +33,15 @@
       font-family: 'Trocchi';
     }
     h2{
-      font-size: 40px;
+      font-size: 60px;
       font-family: 'Trocchi';
       color: darkslategrey;
       text-align: center;
     }
     h3{
-        font-size: 30px;
+        font-size: 50px;
         color:#CB4335;
+        margin-top: 0%;
 
     }
     h4{
@@ -52,7 +53,7 @@
      }
      .page{
        width: 1500px;
-       height: 7000px;
+       height: auto;
        background-color: white;   
        margin: auto;
        padding: 50px;
@@ -70,14 +71,15 @@
     .description-left{
       padding-right: 20px;
     }
-    .flag-padding{
-       padding-left: 120px;
-    }
-    .indent1{
+    .indent40{
         padding-left: 40px;
     }
-    .indent2{
+    .indent80{
         padding-left: 80px;
+    }
+    .indent100{
+      padding-left: 100px;
+
     }
     .pure-g{
       margin-bottom: 25px;
@@ -89,10 +91,29 @@
       font-size: 25px;
       font-weight: 100;
       color: black;
+      text-align: justify;
+      text-justify: inter-word;
+    }
+    .high-lighted-word{
+      font-size: 35px;
+      font-weight: 700;
+      color: cadetblue;
+    }
+    .high-lighted-word2{
+      font-size: 30px;
+      font-weight: 600;
+      font-family: 'Trocchi';
+      color: black;
     }
     .normal-word{
       font-size: 20px;
       color: gray;
+      text-align: justify;
+      text-justify: inter-word;
+      
+    }
+    .center-text{
+      text-align: center;
     }
   </style>
 </head>
@@ -102,16 +123,17 @@
 
    <!-- pure grid group -->
     <div class="pure-g">
-      <div class="pure-u-7-8">
+      <div class="pure-u-1-8">
+        <div class="description description-left">
+            <img src="https://raw.githubusercontent.com/WongJunKang/FIT3179/main/Assignment2/jpg/pngfind.com-statue-png-240327.png" alt="statue_of_liberty" width="110" height="300">
+        </div>
+      </div>
+      <div class="pure-u-3-4">
         <h1>Serious Crime In New York City</h1>
         <div class="emphasised-word">
-          <p> The purpose of the Visualisation is to study about for average american and people who are interested in... 5 types of crime..  </p>
+          <p>The purpose of the Visualisation is to gain insights about the crime zones of Serious Criminal Offences and the trend of crime rate between <span class="high-lighted-word2">January 2006 to December 2018</span> in New York City. 5 Serious Criminal Offences will be discussed in the visualisation including: </p>
+          <div class="center-text"><p><span class="high-lighted-word2">Murder • Rape • Theft-fraud • Kidnapping • Arson</span></p></div>
         </div>
-  
-        <div class="normal-word">
-          <p>New York City (NYC) is the most populous city in the United States. With an estimated 2019 population of 8,336,817 distributed over about 302.6 square miles (784 km2), New York City is also the most densely populated major city in the United States. Located at the southern tip of the U.S. state of New York, the city is the center of the New York metropolitan area, the largest metropolitan area in the world by urban landmass. With almost 20 million people in its metropolitan statistical area and approximately 23 million in its combined statistical area, it is one of the world's most populous megacities.</p>
-        </div>
-        
       </div>
       <div class="pure-u-1-8">
         <div class="description description-right">
@@ -121,93 +143,227 @@
     </div>
 
   <!-- end pure grid group -->
-      <!-- pure grid group -->
-
-    <!-- end pure grid group -->
 
     <!-- pure grid group -->
     
     <div class="pure-g">
         <div class="pure-u-2-3">
             <div id="vis1" class="vis-container"></div>
-          </div>
+            <div class="normal-word">
+              <p>New York City (NYC) is the most populous city in the United States. With an estimated 2019 population of 8,336,817 distributed over about 302.6 square miles (784 km2), New York City is also the most densely populated major city in the United States. Located at the southern tip of the U.S. state of New York, the city is the center of the New York metropolitan area, the largest metropolitan area in the world by urban landmass. With almost 20 million people in its metropolitan statistical area and approximately 23 million in its combined statistical area, it is one of the world's most populous megacities.</p>
+            </div>
+        </div>
         <div class="pure-u-1-3">
+        <h2>Across the City</h2>
         <div class="description description-right">
-          <h2>Crime Across the City</h2>
             <div class="emphasised-word">
               <p>New York City is composed of five boroughs in including:</p>
           </div>
-            <div class="indent1">
-                <h3>• Bronx<br>• Manhattan<br>• Brooklyn<br>• Queens<br>• Staten Island</h3>
+            <div class="indent40">
+              <div class="high-lighted-word2">
+                <p>• Bronx<br>• Manhattan<br>• Brooklyn<br>• Queens<br>• Staten Island</p>
+              </div>
+                
             </div>
-            <p>blah blah blah 2006 - 2018</p>
+
+            <div class="emphasised-word">
+              <p>blah blah blah 2006 - 2018</p>
+
+          </div>
+            
         </div>
 
         </div>
         
     </div>
     <!-- end pure grid group -->
-
-    <!-- pure grid group -->
+    <!-- streamgraph-->
     <h2>Distribution of Criminal Offences</h2>
     <div class="pure-g">
       <div class="pure-u-2-3">
-        <div class="indent2"></div>
           <div id="vis2"  class="vis-container"></div>
-
       </div>
       <div class="pure-u-1-3">
-        <div class="indent2">
-          <div id="vis5"  class="vis-container"></div>
-        </div>
-      </div>
-    </div>
-    <div class="normal-word">
-      <p>New York City (NYC) is the most populous city in the United States. With an estimated 2019 population of 8,336,817 distributed over about 302.6 square miles (784 km2), New York City is also the most densely populated major city in the United States. Located at the southern tip of the U.S. state of New York, the city is the center of the New York metropolitan area, the largest metropolitan area in the world by urban landmass. With almost 20 million people in its metropolitan statistical area and approximately 23 million in its combined statistical area, it is one of the world's most populous megacities.</p>
-    </div>
-    <!-- end pure grid group -->
-
-  <!-- pure grid group -->
-
-    <div class="pure-g">
-        <div class="pure-u-2-3">
-          <div id="vis3"  class="vis-container"></div>
-        </div>
-        <div class="pure-u-1-3">
-          <div class="description description-right">
-            <div id="vis4"  class="vis-container"></div>
+        <div class="description description-right">
+          <h3>Overall Trend</h3>
+          <div class="indent100">
+            <img src="https://raw.githubusercontent.com/WongJunKang/FIT3179/main/Assignment2/jpg/PinClipart.com_conclusion-clipart_5221950.png" alt="overall" width="150" height="150" >
+          </div>
+          <div class="emphasised-word"> 
+            <p>No drastic changes but <span class="high-lighted-word">slight fluctuations</span> can noticed from the Streamgraph. Overall, the changes in the offence counts is <span class="high-lighted-word">consistent</span> and a <span class="high-lighted-word">decreasing trend</span> of offence counts can be observed.</p>
           </div>
         </div>
-      
+      </div>
     </div>
-    <!-- end pure grid group -->
 
-    <!-- pure grid group -->
-    <h2>This is the third section</h2>
+    <br>
+    <br>
+
+
+    <!-- text and radial plot -->
     <div class="pure-g">
       <div class="pure-u-1-3">
-        <div class="description description-left">
-          
-          <p>Using all three columns without merging. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa sapien faucibus et molestie ac feugiat sed. Egestas purus viverra accumsan in nisl.</p>
+
+        <div class="indent80">
+          <div id="vis5"  class="vis-container"></div>
+        </div>
+        <div class="normal-word">
+        <p>New York City (NYC) is the most populous city in the United States. With an estimated 2019 populasely populated major city in the United States.</p>
+        </div>
+
+      </div>
+      <div class="pure-u-1-3">
+
+        <div class="normal-word">
+          <p>New York City (NYC) is the most populous city in the United States. With an estimated 2019 popolitan area, th its combined d statistical area, it ias s ea, th its combined d statistical area, it ias one of the world's m statistical area, it ias s one of the world's most populous megacities. New York City (NYC) is the most populous city in the United States. With an estimated 2019 population of 8,336,817 New York City is also the most densely populated major city in the United States. Located at the southern tip of the U.S. state of New York, the city is the center of the New York metropolitan area, the largest metropolitan area in the world by urban landmass. With almost 20 million people in its metropolitan statistical area and approximately 23 million in its combined statistical area, it is one of the world's most populous megacities. aerhadh jk ksanda n ansdlkn ln LKsdnl nlan lnkals aerhadh jk ksanda n ansdlkn ln LKsdnl nlan lnkals</p>
         </div>
       </div>
       <div class="pure-u-1-3">
-        <div id="vis4"  class="vis-container"></div>
+        <div class="description description-right">
+          <h3>Offence Rankings</h3>
+          <div class="indent100">
+            <img src="https://raw.githubusercontent.com/WongJunKang/FIT3179/main/Assignment2/jpg/PinClipart.com_lists-clip-art_3768175.png" alt="ranking" width="150" height="150" >
+          </div>
+          <div class="emphasised-word"> 
+            <p>The <span class="high-lighted-word">most committed</span> serious crime in New York City between Year 2006 to 2018 is <span class="high-lighted-word">Murder</span> followed by <span class="high-lighted-word">Rape</span> and <span class="high-lighted-word">Theft-Fraud</span> Offences.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    
+    <br>
+    <br>
+
+
+    <!-- waterfall-->
+    <div class="pure-g">
+      <div class="pure-u-2-3">
+        <div class="dedscription description-left">
+          <div id="vis3"  class="vis-container"></div>
+        </div>
       </div>
       <div class="pure-u-1-3">
-        <div id="vis3"  class="vis-container"></div>
+        <div class="description description-right">
+            <h3>Net Offence Counts</h3>
+            <div class="indent80">
+              <img src="https://raw.githubusercontent.com/WongJunKang/FIT3179/main/Assignment2/jpg/decreasing_trend.png" alt="drcreasing_trend" width="200" height="150" >
+            </div>
+            <div class="emphasised-word"> 
+              <p>There is a net <span class="high-lighted-word">decreament</span> of offence counts by <span class="high-lighted-word">30.6%</span> between Year 2006 to Year 2018 from 3251 to 2256 counts of serious criminal cases per year.</p>
+            </div>
+            <h3>Maximum Fall</h3>
+            <div class="indent100">
+              <img src="https://raw.githubusercontent.com/WongJunKang/FIT3179/main/Assignment2/jpg/trophy-xxl.png" alt="trophy" width="150" height="150" >
+            </div>
+            <div class="emphasised-word"> 
+              <p>Between year <span class="high-lighted-word">2008 and 2009</span> there is a <span class="high-lighted-word">maximum fall</span> of offence counts by nearly <span class="high-lighted-word">12.7%</span> (430 cases).</p>
+            </div>
+        </div>
       </div>
-    
+  </div>
+  <!-- end pure grid group -->
+
+  <br>
+  <br>
+
+
+  <!-- heatmap -->
+  <div class="pure-g">
+    <div class="pure-u-2-3">
+      <p>New York City (NYC) is the most populous city in the United States. With an estimated 2019 population of 8,336,817 distributed over about 302.6 square miles (784 km2), New York City is also the most densely populated major city in the United States. Located at the southern tip of the U.S. state of New York, the city is the center of the New York metropolitan area, the largest metropolitan area in the world by urban landmass. With almost 20 million people in its metropolitan statistical area and approximately 23 million in its combined statistical area, it is one of the world's most populous megacities. aerhadh jk ksanda n ansdlkn ln LKsdnl nlan lnkals</p>
+    </div>
+    <div class="pure-u-1-3">
+      <div class="indent40">
+        <div id="vis4"  class="vis-container"></div>
+      </div>
+    </div>
+  </div>
+
+  <br>
+  <br>
+
+
+
+
+
+    <!-- female-male -->
+    <h2>Biological Sex, Age Groups and Race</h2>
+      <div class="pure-g">
+        <div class="pure-u-1-3">
+          <h3>Most Commited Crime</h3>
+          <div class="emphasised-word"> 
+            <p>Between Year 2006 and 2018, out of the 5 serious crimes, the most commited crime for female is <span class="high-lighted-word">Theft-fraud</span> and for male is <span class="high-lighted-word">Rape</span>. </p>
+          </div>
+        </div>
+        <div class="pure-u-1-3">
+          <div class= "indent100">
+            <img src="https://raw.githubusercontent.com/WongJunKang/FIT3179/main/Assignment2/jpg/sign-toilet_icon-icons.com_48453.png" alt="female_male" width="250" height="225" >
+          </div>
+        </div> 
+        <div class="pure-u-1-3">
+          <h3>Reported Crimes</h3>
+          <div class="emphasised-word">
+            <p>All categories of reported serious crime are commited <span class="high-lighted-word">more frequently</span> by <span class="high-lighted-word">male</span> then <span class="high-lighted-word">female</span> in all <span class="high-lighted-word">all age-groups</span></p>
+          </div>
+        </div>
     </div>
     <!-- end pure grid group -->
+
+    <!-- pure grid group (population pyramid) -->
+    <div class="pure-g">
+      <div class="pure-u-1-1">
+        <div class="description description-left">
+          <div id="population_pyramid"  class="vis-container"></div>
+        </div>
+      </div>
+    </div>
+    <!-- end pure grid group -->
+
+    <!-- age -->
+    <div class="pure-g">
+      <div class="pure-u-1-3">
+        <h3>Age Groups</h3>
+        <div class="emphasised-word"> 
+          <p>Most criminals of serious crime fall in the age-group of <span class="high-lighted-word">25-44 despite their biological sex</span>.</p>
+        </div>
+      </div>
+      <div class="pure-u-1-3">
+        <div class= "indent100">
+          <img src="https://raw.githubusercontent.com/WongJunKang/FIT3179/main/Assignment2/jpg/age-range_edited2.png" alt="age_group" width="250" height="225" >
+        </div>
+      </div> 
+      <div class="pure-u-1-3">
+        <h3>Title</h3>
+        <div class="emphasised-word"> 
+          <p>Between Year 2008 and 2018 <span class= "high-lighted-word">There is a maximum</span> fall of Offence Counts by nearly 12.7% (430 cases).</p>
+        </div>
+      </div>
+  </div>
+  <!-- end pure grid group -->
+
+  <br>
+  <br>
+  <br>
+  <br>
+
+    <!-- pure grid group (stack bar) -->
+    <div class="pure-g">
+      <div class="pure-u-1-1">
+        <div class="description description-left">
+          <div id="stack_bar"  class="vis-container"></div>
+        </div>
+      </div>
+    </div>
+    <!-- end pure grid group -->  
+
+
+      
   
     <div class="pure-g">
       <div class="pure-u-1-1 small-font">
         <p>This visualisation is created by <a href="https://github.com/KadekSatriadi" target="_blank">Kadek Satriadi</a>. The datasource is <a href="#"" target="_blank">some data repository online</href>.</p>
       </div>
-      <div class="description flag-padding">
-        <img src="https://raw.githubusercontent.com/WongJunKang/FIT3179/main/Assignment2/jpg/1200px-Flag_of_New_York_City.svg.png" alt="new_york_city_flag" width="340" height="200" >
-    </div>
     </div>
   
 
