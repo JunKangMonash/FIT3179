@@ -18,7 +18,7 @@
   "encoding": {
     "theta": {"aggregate":"count", "field": "ARREST_KEY", "type": "quantitative", "stack": true},
     "radius": {"aggregate":"count", "field": "ARREST_KEY", "scale": {"type": "sqrt", "zero": true, "rangeMin": 20}},
-    "color": {"title": "Crime", "field": "OFNS_DESC", "type": "nominal", "scale": {"range": ["#17202A","#76C8AE","#C42525", "#000000","#F7DC6F"]}, "legend":null},
+    "color": {"title": "Crime", "field": "OFNS_DESC", "type": "nominal",  "scale": {"range": ["#F7DC6F","#F1948A ","#8b0000", "#000000","#CACFD2"]}, "legend":null},
     "tooltip": [
       {"field": "OFNS_DESC", "type": "nominal", "title": "Offence Type"},
       {"aggregate": "count", "type": "quantitative", "title": "Offence Counts"}]
