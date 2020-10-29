@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-  "title": "Serious Crimes In New York from Jan 2006 to Dec 2018 (1 dot = 1 crime)",
+  "title": {"text":"Serious Crimes In New York from Jan 2006 to Dec 2018 (1 dot = 1 crime)", "fontSize":20},
   "width": 1000,
   "height": 700,
   "params": [ {
