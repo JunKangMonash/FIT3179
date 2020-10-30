@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-  "width": 300, "height": 300,
+  "width": 325, "height": 250,
   "data": {
       "url": "https://raw.githubusercontent.com/WongJunKang/FIT3179/main/Assignment2/data/Serious_Crime.csv"
   },
@@ -43,7 +43,7 @@
           "field": "ARREST_KEY",
           "aggregate": "count",
           "type": "quantitative",
-          "scale": {"range": ["#FFFFFF", "#ff3300", "#000000" ]},
+          "scale": {"range": ["#F4E3B2", "#131353"]},
           "legend": {
               "title": null
           }
