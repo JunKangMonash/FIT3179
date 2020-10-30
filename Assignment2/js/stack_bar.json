@@ -1,7 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
   "data": {"url": "https://raw.githubusercontent.com/WongJunKang/FIT3179/main/Assignment2/data/Serious_Crime.csv"},
-  "title":{"text":"Offence Counts Distribution by Race and Biological Sex", "fontSize":20},
+  "title":{"text":"Number of Offences by Race and Biological Sex", "fontSize":25},
   "width":750,
   "height":400,
   "mark": "bar",
@@ -12,9 +12,10 @@
       "titleFontSize":15,
       "gridColor":"white"
     }},
-    "y": {"field": "PERP_RACE", "sort": ["BLACK", "WHITE HISPANIC", "WHITE", "BLACK HISPANIC", "ASIAN / PACIFIC ISLANDER", "AMERICAN INDIAN/ALASKAN NATIVE", "OTHER", "UNKNOWN" ], "axis":{"title":"Offence Type", "labelFontSize":10,"titleFontSize":15, "gridColor":"white" }},
-    "color": {"field": "PERP_SEX", "scale": {"range": ["#b30000", "#454545"]}, "legend":{"title": "Biological Sex", "titleFontSize":15, "labelFontSize":15, "orient": "bottom-right"}},
+    "y": {"field": "PERP_RACE", "sort": ["BLACK", "WHITE HISPANIC", "WHITE", "BLACK HISPANIC", "ASIAN / PACIFIC ISLANDER", "AMERICAN INDIAN/ALASKAN NATIVE", "OTHER", "UNKNOWN" ], "axis":{"title":"Offence Type", "labelFontSize":10,"titleFontSize":20, "gridColor":"white" }},
+    "color": {"field": "PERP_SEX", "scale": {"range": ["#b30000", "#454545"]}, "legend":{"title": "Biological Sex", "titleFontSize":20, "labelFontSize":20, "orient": "bottom-right"}},
           "tooltip": [
+        {"field": "PERP_RACE", "type": "nominal", "title":"Racial Group: "},
         {"field": "PERP_SEX", "type": "nominal", "title":"Biological Sex: "},
         {"aggregate": "count", "type": "quantitative", "title":"Offence Counts"}]
   }
