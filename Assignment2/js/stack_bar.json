@@ -8,8 +8,8 @@
   "encoding": {
     "x": {"aggregate": "count",  "axis":{
       "title": "Offence Counts",
-      "labelFontSize":15,
-      "titleFontSize":15,
+      "labelFontSize":20,
+      "titleFontSize":20,
       "gridColor":"white"
     }},
     "y": {"field": "PERP_RACE", "sort": ["BLACK", "WHITE HISPANIC", "WHITE", "BLACK HISPANIC", "ASIAN / PACIFIC ISLANDER", "AMERICAN INDIAN/ALASKAN NATIVE", "OTHER", "UNKNOWN" ], "axis":{"title":"Offence Type", "labelFontSize":10,"titleFontSize":20, "gridColor":"white" }},
