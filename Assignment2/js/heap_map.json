@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-  "width": 350, "height": 550,
+  "width": 350, "height": 525,
   "data": {
       "url": "https://raw.githubusercontent.com/WongJunKang/FIT3179/main/Assignment2/data/Serious_Crime.csv"
   },
@@ -23,9 +23,10 @@
           "title": "Month",
           "axis": {
               "labelAngle": 0,
-              "labelFontSize":15,
-              "titleFontSize":15,
-              "labelSeparation":20
+              "labelFontSize":20,
+              "titleFontSize":20,
+              "labelSeparation":20,
+              "tickColor":"white"
           }
       },
       "y": {
@@ -35,9 +36,10 @@
           "title": "Year",
           "axis": {
               "labelAngle": 0,
-              "labelFontSize":15,
-              "titleFontSize":15,
-              "labelSeparation":20
+              "labelFontSize":20,
+              "titleFontSize":20,
+              "labelSeparation":20,
+              "tickColor":"white"
           }
       },
       "color": {
@@ -46,7 +48,8 @@
           "type": "quantitative",
           "scale": {"range": ["#F4E3B2", "#131353"]},
           "legend": {
-              "title": null
+              "title": null,
+              "labelFontSize":20
           }
       },
       "tooltip": [
