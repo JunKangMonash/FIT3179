@@ -73,7 +73,7 @@
           "condition": [
             {
               "test": "datum.label === '2006' || datum.label === '2018'",
-              "value": "#131353"
+              "value": "#0B0B32"
             },
             {"test": "datum.sum < datum.previous_sum", "value": "#93c4aa"}
           ],
