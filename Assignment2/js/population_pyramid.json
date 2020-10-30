@@ -1,5 +1,4 @@
-  
-{
+ {
     "title":{"text": "Offence Counts by Biological Sex and Age Group", "fontSize":20, "dx":500},
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
   "description": "Serious Crime.",
@@ -37,7 +36,7 @@
     "transform": [
     {"filter": {"field": "PERP_SEX", "equal": "F"}},
     {"filter": "Crime_selection == null || datum.OFNS_DESC == Crime_selection"}],
-    "title": {"text": "Female", "fontSize": 20, "color":"#EC7063"},
+    "title": {"text": "Female", "fontSize": 20, "color":"#8b0000"},
     "width": 725,
     "height": 400,
     "mark": "bar",
@@ -54,7 +53,7 @@
       },
       "color": {
         "field": "PERP_SEX",
-        "scale": {"range": ["#EC7063", "#566573"]},
+        "scale": {"range": ["#b30000", "#454545"]},
         "legend": null
       },
       "tooltip": [
@@ -77,7 +76,7 @@
     "transform": [
       {"filter": {"field": "PERP_SEX", "equal": "M"}},
       {"filter": "Crime_selection == null || datum.OFNS_DESC == Crime_selection"}],
-    "title": {"text":"Male", "fontSize":20, "color":"#566573"},
+    "title": {"text":"Male", "fontSize":20, "color":"#454545"},
     "width": 725,
     "height": 400,
     "mark": "bar",
