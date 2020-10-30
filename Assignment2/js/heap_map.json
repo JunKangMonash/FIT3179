@@ -1,10 +1,10 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-  "width": 350, "height": 450,
+  "width": 350, "height": 550,
   "data": {
       "url": "https://raw.githubusercontent.com/WongJunKang/FIT3179/main/Assignment2/data/Serious_Crime.csv"
   },
-  "title": {"text":"Offence Count of Year by Month", "fontSize":30},
+  "title": {"text":"Number of Offences by Year and Month", "fontSize":25},
   "config": {
       "view": {
           "strokeWidth": 0,
