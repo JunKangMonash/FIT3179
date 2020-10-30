@@ -1,5 +1,5 @@
  {
-    "title":{"text": "Number of Offences by Biological Sex and Age Group", "fontSize":30, "dx":400},
+    "title":{"text": "Number of Offences by Biological Sex and Age Group", "fontSize":25, "dx":450},
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
   "description": "Serious Crime.",
   
