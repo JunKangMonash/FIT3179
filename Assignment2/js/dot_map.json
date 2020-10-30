@@ -73,12 +73,16 @@
           "type": "quantitative"
         },
         "size": {"value": 5},
-        "color": {"value":"darkred"}
+        "color": {"value":"darkred"},
+        "tooltip":[
+        {"field":"OFNS_DESC", "type": "nominal", "title":"Offence Type"},
+        {"field":"ARREST_DATE", "timeUnit":"yearmonthdate", "type": "nominal", "title":"Arrest Date"}
+        ]
       },
       "transform": [
         {"filter": "Crime_selection == null || datum.OFNS_DESC == Crime_selection"},
         {"filter": {"timeUnit": "year", "field": "ARREST_DATE", "gte": "yearAbove"}}
-        ]
+        ]  
     }
   ]
 }
