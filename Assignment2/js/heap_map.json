@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-  "width": 650, "height": 250,
+  "width": 350, "height": 450,
   "data": {
       "url": "https://raw.githubusercontent.com/WongJunKang/FIT3179/main/Assignment2/data/Serious_Crime.csv"
   },
