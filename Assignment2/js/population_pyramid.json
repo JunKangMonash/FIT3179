@@ -1,5 +1,5 @@
  {
-    "title":{"text": "Offence Counts by Biological Sex and Age Group", "fontSize":20, "dx":500},
+    "title":{"text": "Number of Offences by Biological Sex and Age Group", "fontSize":30, "dx":400},
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
   "description": "Serious Crime.",
   
@@ -36,7 +36,7 @@
     "transform": [
     {"filter": {"field": "PERP_SEX", "equal": "F"}},
     {"filter": "Crime_selection == null || datum.OFNS_DESC == Crime_selection"}],
-    "title": {"text": "Female", "fontSize": 20, "color":"#8b0000"},
+    "title": {"text": "Female", "fontSize": 30, "color":"#8b0000"},
     "width": 725,
     "height": 400,
     "mark": "bar",
@@ -46,8 +46,8 @@
       },
       "x": {
         "aggregate": "count", "field": "ARREST_KEY",
-        "title": "Offence Counts",
-        "axis": {"format": "s", "titleFontSize":15, "labelFontSize":15},
+        "title": "Number of Offences",
+        "axis": {"format": "s", "titleFontSize":20, "labelFontSize":20},
         "scale": {"domain": [0,15000]} ,
         "sort": "descending"
       },
@@ -60,12 +60,12 @@
         {"field": "PERP_SEX", "type": "nominal", "title":"Biological Sex: "},
         {"aggregate": "count", "type": "quantitative", "title":"Offence Counts"}]
       }}, {
-    "width": 40,
+    "width": 70,
     "height": 400,
     "view": {"stroke": null},
     "mark": {
       "type": "text",
-      "fontSize":15,
+      "fontSize":25,
       "align": "center"
     },
     "encoding": {
@@ -76,7 +76,7 @@
     "transform": [
       {"filter": {"field": "PERP_SEX", "equal": "M"}},
       {"filter": "Crime_selection == null || datum.OFNS_DESC == Crime_selection"}],
-    "title": {"text":"Male", "fontSize":20, "color":"#454545"},
+    "title": {"text":"Male", "fontSize":30, "color":"#454545"},
     "width": 725,
     "height": 400,
     "mark": "bar",
@@ -87,8 +87,8 @@
       },
       "x": {
         "aggregate": "count", "field": "people",
-        "title": "Offence Counts",
-        "axis": {"format": "s", "titleFontSize":15, "labelFontSize":15},
+        "title": "Number of Offences",
+        "axis": {"format": "s", "titleFontSize":20, "labelFontSize":20},
         "scale": {"domain": [0,15000]} 
       },
       "color": {
