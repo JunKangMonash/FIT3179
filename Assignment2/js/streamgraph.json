@@ -34,7 +34,7 @@
       "axis": null,
       "stack": "center"
     },
-    "color": {"field":"OFNS_DESC", "scale": {"range": ["#BDD2B1","#717C89", "#131353", "#CF5C36","#F4E3B2"]}, "legend":{"title":"Offence Types","orient": "top", "titleFontSize": 20, "labelFontSize":15}},
+    "color": {"field":"OFNS_DESC", "scale": {"range": ["#BDD2B1","#717C89", "#0B0B32", "#CF5C36","#F4E3B2"]}, "legend":{"title":"Offence Types","orient": "top", "titleFontSize": 20, "labelFontSize":15}},
     "opacity": {"condition": {"selection": "crime_highlight", "value": 1},"value": 0.2},
       "tooltip": [
       {"field": "OFNS_DESC", "type": "nominal", "title": "Offence Type"},
