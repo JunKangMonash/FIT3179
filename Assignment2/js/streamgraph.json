@@ -1,7 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
   "width": 1000, "height": 400,
-  "title":{"text":"Distribution of Criminal Offences From Jan 2006 to Dec 2018", "fontSize":30},
+  "title":{"text":"Number of Offences by Year", "fontSize":25},
   "data": {"url": "https://raw.githubusercontent.com/WongJunKang/FIT3179/main/Assignment2/data/Serious_Crime.csv"},
   "params": [ {
       "name": "yearAbove",
@@ -27,7 +27,7 @@
   "encoding": {
     "x": {
       "timeUnit": "yearmonth", "field": "ARREST_DATE", 
-      "axis": {"domain": false, "format": "%Y", "tickSize": 0, "title":"Year/Month", "gridColor":"white"}
+      "axis": {"domain": false, "format": "%Y", "tickSize": 0, "title":"Year/Month", "gridColor":"white", "labelFontSize":20, "labelSeparation":30, "titleFontSize":20}
     },
     "y": {
       "aggregate": "count", "field": "ARREST_KEY",
