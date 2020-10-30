@@ -13,7 +13,7 @@
       "gridColor":"white"
     }},
     "y": {"field": "PERP_RACE", "sort": ["BLACK", "WHITE HISPANIC", "WHITE", "BLACK HISPANIC", "ASIAN / PACIFIC ISLANDER", "AMERICAN INDIAN/ALASKAN NATIVE", "OTHER", "UNKNOWN" ], "axis":{"title":"Offence Type", "labelFontSize":10,"titleFontSize":15, "gridColor":"white" }},
-    "color": {"field": "PERP_SEX", "scale": {"range": ["#EC7063", "#566573"]}, "legend":{"title": "Biological Sex", "titleFontSize":15, "labelFontSize":15, "orient": "bottom-right"}},
+    "color": {"field": "PERP_SEX", "scale": {"range": ["#b30000", "#454545"]}, "legend":{"title": "Biological Sex", "titleFontSize":15, "labelFontSize":15, "orient": "bottom-right"}},
           "tooltip": [
         {"field": "PERP_SEX", "type": "nominal", "title":"Biological Sex: "},
         {"aggregate": "count", "type": "quantitative", "title":"Offence Counts"}]
