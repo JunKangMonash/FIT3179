@@ -1,4 +1,3 @@
-
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
   "width": 1000, "height": 400,
@@ -35,7 +34,7 @@
       "axis": null,
       "stack": "center"
     },
-    "color": {"field":"OFNS_DESC", "scale": {"range": ["#F7DC6F","#F1948A ","#8b0000", "#000000","#CACFD2"]}, "legend":{"title":"Offence Types","orient": "top", "titleFontSize": 20, "labelFontSize":15}},
+    "color": {"field":"OFNS_DESC", "scale": {"range": ["#BDD2B1","#717C89", "#050517", "#CF5C36","#F4E3B2"]}, "legend":{"title":"Offence Types","orient": "top", "titleFontSize": 20, "labelFontSize":15}},
     "opacity": {"condition": {"selection": "crime_highlight", "value": 1},"value": 0.2},
       "tooltip": [
       {"field": "OFNS_DESC", "type": "nominal", "title": "Offence Type"},
