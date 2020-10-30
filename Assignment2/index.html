@@ -28,25 +28,29 @@
     h1{
       font-weight: 900;
       color: darkred;
-      font-size: 80px;
+      font-size: 78px;
       text-align: center;
       font-family: 'Trocchi';
     }
     h2{
       font-size: 60px;
       font-family: 'Trocchi';
-      color: darkslategrey;
+      color: #171764;
       text-align: center;
+      margin-top: 0%;
     }
     h3{
         font-size: 50px;
-        color:#CB4335;
+        color: rgb(192, 58, 58);
         margin-top: 0%;
-
+        text-align: center;
     }
     h4{
       font-size: 30px;
+      margin-top: 0%;
+      margin-bottom: 0%;
       color: black;
+      font-family: 'Trocchi';
     }
      body{
        background-color: darkgray;
@@ -71,6 +75,9 @@
     .description-left{
       padding-right: 20px;
     }
+    .indent20{
+        padding-left: 20px;
+    }
     .indent40{
         padding-left: 40px;
     }
@@ -80,6 +87,9 @@
     .indent100{
       padding-left: 100px;
 
+    }
+    .indent90{
+      padding-left: 90px;
     }
     .pure-g{
       margin-bottom: 25px;
@@ -97,7 +107,7 @@
     .high-lighted-word{
       font-size: 35px;
       font-weight: 700;
-      color: cadetblue;
+      color:darkslategrey;
     }
     .high-lighted-word2{
       font-size: 30px;
@@ -105,15 +115,56 @@
       font-family: 'Trocchi';
       color: black;
     }
+    .murder-word{
+      font-size: 35px;
+      font-weight: 700;
+      color:#0B0B32;
+    }
+    .rape-word{
+      font-size: 35px;
+      font-weight: 700;
+      color:#CF5C36;
+    }
+    .kidnap-word{
+      font-size: 35px;
+      font-weight: 700;
+      color:#717C89;
+    }
+    .theft-word{
+      font-size: 35px;
+      font-weight: 700;
+      color:#b69f5b;
+    }
+    .arson-word{
+      font-size: 35px;
+      font-weight: 700;
+      color:#BDD2B1;
+    }
+    .female-word{
+      font-size: 35px;
+      font-weight: 700;
+      color:#b30000;
+    }
+    .male-word{
+      font-size: 35px;
+      font-weight: 700;
+      color:#454545;
+    }
     .normal-word{
-      font-size: 20px;
+      font-size: 25px;
       color: gray;
       text-align: justify;
-      text-justify: inter-word;
-      
+      text-justify: inter-word;  
     }
     .center-text{
       text-align: center;
+    }
+    .dark-blue{
+      color:"#131353";
+    }
+    .sources{
+      font-size: 14;
+      text-align: left;
     }
   </style>
 </head>
@@ -129,7 +180,8 @@
         </div>
       </div>
       <div class="pure-u-3-4">
-        <h1>Serious Crime In New York City</h1>
+        
+        <h1>Serious Crimes In New York City</span></h1>
         <div class="emphasised-word">
           <p>The purpose of the Visualisation is to gain insights about the crime zones of Serious Criminal Offences and the trend of crime rate between <span class="high-lighted-word2">January 2006 to December 2018</span> in New York City. 5 Serious Criminal Offences will be discussed in the visualisation including: </p>
           <div class="center-text"><p><span class="high-lighted-word2">Murder • Rape • Theft-fraud • Kidnapping • Arson</span></p></div>
@@ -143,6 +195,10 @@
     </div>
 
   <!-- end pure grid group -->
+  <br>
+  <br>
+  <br>
+  <br>
 
     <!-- pure grid group -->
     
@@ -150,7 +206,8 @@
         <div class="pure-u-2-3">
             <div id="vis1" class="vis-container"></div>
             <div class="normal-word">
-              <p>New York City (NYC) is the most populous city in the United States. With an estimated 2019 population of 8,336,817 distributed over about 302.6 square miles (784 km2), New York City is also the most densely populated major city in the United States. Located at the southern tip of the U.S. state of New York, the city is the center of the New York metropolitan area, the largest metropolitan area in the world by urban landmass. With almost 20 million people in its metropolitan statistical area and approximately 23 million in its combined statistical area, it is one of the world's most populous megacities.</p>
+              <br>
+              <p>New York City (NYC) located at the southern tip of the U.S. state is the most populous and densely populated city in the United States. With an estimated 2019 population of 8,336,817 distributed over about 302.6 square miles (784 km2). The city is the center of the New York metropolitan area, the largest metropolitan area in the world by urban landmass. (Wikipedia, N.d.)</p>
             </div>
         </div>
         <div class="pure-u-1-3">
@@ -160,22 +217,24 @@
               <p>New York City is composed of five boroughs in including:</p>
           </div>
             <div class="indent40">
-              <div class="high-lighted-word2">
+              <div class="high-lighted-word">
                 <p>• Bronx<br>• Manhattan<br>• Brooklyn<br>• Queens<br>• Staten Island</p>
               </div>
                 
             </div>
-
             <div class="emphasised-word">
-              <p>blah blah blah 2006 - 2018</p>
-
+              <p>According to the dot map between 2006 to 2018, the <span class="high-lighted-word">most densely populated</span> arrest zones for the serious crimes are located in the <span class="high-lighted-word">Bronx and Manhattan</span>. The arrest spots for <span class="rape-word">Rape</span>, <span class="arson-word">Arson</span> and <span class="kidnap-word">Kidnapping</span> offences are distributed quite <span class="high-lighted-word">evenly</span> throughout the city. The arrest spots for <span class="murder-word">Murder</span> offences are more concentrated around <span class="high-lighted-word">Bronx and Manhattan</span>. Lastly, for <span class="theft-word">Theft-fraud</span> offences the arrest spots are densely gathered around the centre of <span class="high-lighted-word">Manhattan</span>.</p>
           </div>
             
         </div>
 
         </div>
-        
     </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
     <!-- end pure grid group -->
     <!-- streamgraph-->
     <h2>Distribution of Criminal Offences</h2>
@@ -190,12 +249,14 @@
             <img src="https://raw.githubusercontent.com/WongJunKang/FIT3179/main/Assignment2/jpg/PinClipart.com_conclusion-clipart_5221950.png" alt="overall" width="150" height="150" >
           </div>
           <div class="emphasised-word"> 
-            <p>No drastic changes but <span class="high-lighted-word">slight fluctuations</span> can noticed from the Streamgraph. Overall, the changes in the offence counts is <span class="high-lighted-word">consistent</span> and a <span class="high-lighted-word">decreasing trend</span> of offence counts can be observed.</p>
+            <p>No drastic changes but <span class="high-lighted-word">slight fluctuations</span> can noticed from the Streamgraph. Overall, the changes in the number of offences are <span class="high-lighted-word">consistent</span> and a <span class="high-lighted-word">decreasing trend</span> in the number of offences can be observed.</p>
           </div>
         </div>
       </div>
     </div>
 
+    <br>
+    <br>
     <br>
     <br>
 
@@ -204,34 +265,42 @@
     <div class="pure-g">
       <div class="pure-u-1-3">
 
-        <div class="indent80">
+        <div class="indent20">
           <div id="vis5"  class="vis-container"></div>
         </div>
+            <!-- text and radial plot -->
         <div class="normal-word">
-        <p>New York City (NYC) is the most populous city in the United States. With an estimated 2019 populasely populated major city in the United States.</p>
+        <br>
+        <br>
+        <br>
+        <br>
+        <p><p>Crime rates in New York City spiked in the 1980s and early 1990s as the crack epidemic surged, but they have been dropping since 1991, and, as of 2017, they are among the lowest of major cities in the United States. (Wikipedia, N.d.)</p></p>
         </div>
+            <!-- text and radial plot -->
 
       </div>
       <div class="pure-u-1-3">
 
-        <div class="normal-word">
-          <p>New York City (NYC) is the most populous city in the United States. With an estimated 2019 popolitan area, th its combined d statistical area, it ias s ea, th its combined d statistical area, it ias one of the world's m statistical area, it ias s one of the world's most populous megacities. New York City (NYC) is the most populous city in the United States. With an estimated 2019 population of 8,336,817 New York City is also the most densely populated major city in the United States. Located at the southern tip of the U.S. state of New York, the city is the center of the New York metropolitan area, the largest metropolitan area in the world by urban landmass. With almost 20 million people in its metropolitan statistical area and approximately 23 million in its combined statistical area, it is one of the world's most populous megacities. aerhadh jk ksanda n ansdlkn ln LKsdnl nlan lnkals aerhadh jk ksanda n ansdlkn ln LKsdnl nlan lnkals</p>
-        </div>
+          <div id="vis4"  class="vis-container"></div>
+
       </div>
       <div class="pure-u-1-3">
         <div class="description description-right">
-          <h3>Offence Rankings</h3>
+          <h3>The Most Committed Crimes</h3>
           <div class="indent100">
             <img src="https://raw.githubusercontent.com/WongJunKang/FIT3179/main/Assignment2/jpg/PinClipart.com_lists-clip-art_3768175.png" alt="ranking" width="150" height="150" >
           </div>
           <div class="emphasised-word"> 
-            <p>The <span class="high-lighted-word">most committed</span> serious crime in New York City between Year 2006 to 2018 is <span class="high-lighted-word">Murder</span> followed by <span class="high-lighted-word">Rape</span> and <span class="high-lighted-word">Theft-Fraud</span> Offences.</p>
+            <p>The <span class="high-lighted-word">most committed</span> serious crime in New York City between Year 2006 to 2018 is <span class="murder-word">Murder</span> followed by <span class="rape-word">Rape</span> and <span class="theft-word">Theft-Fraud</span> Offences.</p>
+            <p><span class="high-lighted-word">March 2008</span> has the <span class="high-lighted-word">maximum</span> number of offences in a single month followed by October 2008.</p>
           </div>
         </div>
 
       </div>
     </div>
     
+    <br>
+    <br>
     <br>
     <br>
 
@@ -245,19 +314,19 @@
       </div>
       <div class="pure-u-1-3">
         <div class="description description-right">
-            <h3>Net Offence Counts</h3>
+            <h3>Percentage Fall</h3>
             <div class="indent80">
               <img src="https://raw.githubusercontent.com/WongJunKang/FIT3179/main/Assignment2/jpg/decreasing_trend.png" alt="drcreasing_trend" width="200" height="150" >
             </div>
             <div class="emphasised-word"> 
-              <p>There is a net <span class="high-lighted-word">decreament</span> of offence counts by <span class="high-lighted-word">30.6%</span> between Year 2006 to Year 2018 from 3251 to 2256 counts of serious criminal cases per year.</p>
+              <p>There is a net <span class="high-lighted-word">decreament</span> in the number of offences by <span class="high-lighted-word">30.6%</span> between Year 2006 to Year 2018 from 3251 to 2256 counts of serious criminal cases per year.</p>
             </div>
             <h3>Maximum Fall</h3>
-            <div class="indent100">
-              <img src="https://raw.githubusercontent.com/WongJunKang/FIT3179/main/Assignment2/jpg/trophy-xxl.png" alt="trophy" width="150" height="150" >
+            <div class="indent40">
+              <img src="https://raw.githubusercontent.com/WongJunKang/FIT3179/main/Assignment2/jpg/black-trophy.png" alt="trophy" width="300" height="150" >
             </div>
             <div class="emphasised-word"> 
-              <p>Between year <span class="high-lighted-word">2008 and 2009</span> there is a <span class="high-lighted-word">maximum fall</span> of offence counts by nearly <span class="high-lighted-word">12.7%</span> (430 cases).</p>
+              <p>Between year <span class="high-lighted-word">2008 and 2009</span> there is a <span class="high-lighted-word">maximum fall</span> in the number of offences by nearly <span class="high-lighted-word">12.7%</span> (430 cases).</p>
             </div>
         </div>
       </div>
@@ -266,20 +335,6 @@
 
   <br>
   <br>
-
-
-  <!-- heatmap -->
-  <div class="pure-g">
-    <div class="pure-u-2-3">
-      <p>New York City (NYC) is the most populous city in the United States. With an estimated 2019 population of 8,336,817 distributed over about 302.6 square miles (784 km2), New York City is also the most densely populated major city in the United States. Located at the southern tip of the U.S. state of New York, the city is the center of the New York metropolitan area, the largest metropolitan area in the world by urban landmass. With almost 20 million people in its metropolitan statistical area and approximately 23 million in its combined statistical area, it is one of the world's most populous megacities. aerhadh jk ksanda n ansdlkn ln LKsdnl nlan lnkals</p>
-    </div>
-    <div class="pure-u-1-3">
-      <div class="indent40">
-        <div id="vis4"  class="vis-container"></div>
-      </div>
-    </div>
-  </div>
-
   <br>
   <br>
 
@@ -291,20 +346,20 @@
     <h2>Biological Sex, Age Groups and Race</h2>
       <div class="pure-g">
         <div class="pure-u-1-3">
-          <h3>Most Commited Crime</h3>
-          <div class="emphasised-word"> 
-            <p>Between Year 2006 and 2018, out of the 5 serious crimes, the most commited crime for female is <span class="high-lighted-word">Theft-fraud</span> and for male is <span class="high-lighted-word">Rape</span>. </p>
+          <h3>Crime by Gender</h3>
+          <div class="emphasised-word">  
+            <p>Between Year 2006 and 2018, out of the 5 serious crimes, the most commited crime for <span class="female-word">female</span> is <span class="theft-word">Theft-fraud</span> and for <span class="male-word">male</span> is <span class="rape-word">Rape</span>. </p>
           </div>
         </div>
         <div class="pure-u-1-3">
-          <div class= "indent100">
-            <img src="https://raw.githubusercontent.com/WongJunKang/FIT3179/main/Assignment2/jpg/sign-toilet_icon-icons.com_48453.png" alt="female_male" width="250" height="225" >
+          <div class= "indent90">
+            <img src="https://raw.githubusercontent.com/WongJunKang/FIT3179/main/Assignment2/jpg/black-female-male.png" alt="female_male" width="250" height="225" >
           </div>
         </div> 
         <div class="pure-u-1-3">
-          <h3>Reported Crimes</h3>
+          <h3>Male and Female</h3>
           <div class="emphasised-word">
-            <p>All categories of reported serious crime are commited <span class="high-lighted-word">more frequently</span> by <span class="high-lighted-word">male</span> then <span class="high-lighted-word">female</span> in all <span class="high-lighted-word">all age-groups</span></p>
+            <p>All categories of reported serious crime are commited <span class="high-lighted-word">more frequently</span> by <span class="male-word">male</span> than <span class="female-word">female</span> in all <span class="high-lighted-word">all age-groups</span></p>
           </div>
         </div>
     </div>
@@ -323,20 +378,20 @@
     <!-- age -->
     <div class="pure-g">
       <div class="pure-u-1-3">
-        <h3>Age Groups</h3>
+        <h3>Most Common Group</h3>
         <div class="emphasised-word"> 
           <p>Most criminals of serious crime fall in the age-group of <span class="high-lighted-word">25-44 despite their biological sex</span>.</p>
         </div>
       </div>
       <div class="pure-u-1-3">
         <div class= "indent100">
-          <img src="https://raw.githubusercontent.com/WongJunKang/FIT3179/main/Assignment2/jpg/age-range_edited2.png" alt="age_group" width="250" height="225" >
+          <img src="https://raw.githubusercontent.com/WongJunKang/FIT3179/main/Assignment2/jpg/age-range%20(3).png" alt="age_group" width="250" height="225" >
         </div>
       </div> 
       <div class="pure-u-1-3">
-        <h3>Title</h3>
-        <div class="emphasised-word"> 
-          <p>Between Year 2008 and 2018 <span class= "high-lighted-word">There is a maximum</span> fall of Offence Counts by nearly 12.7% (430 cases).</p>
+        <h3>The Youth</h3>
+        <div class="emphasised-word">
+          <p>Despite the smaller range for the <span class= "high-lighted-word">18-24</span> age-group, there is an immense amount<span class = "high-lighted-word">(11448 cases)</span> of serious crime committed by the group.</p>
         </div>
       </div>
   </div>
@@ -349,20 +404,47 @@
 
     <!-- pure grid group (stack bar) -->
     <div class="pure-g">
-      <div class="pure-u-1-1">
+      <div class="pure-u-1-3">
         <div class="description description-left">
+          <p>
+            <div class="indent20">
+              <h3>Racial Distribution</h3>
+              <br>
+              <br>
+              <div class="emphasised-word">
+                <span class="high-lighted-word">50.6%</span> of reported crime are commited by <span class="high-lighted-word">Black Americans</span> followed by <span class="high-lighted-word">White Hispanic (25.3%)</span> and <span class="high-lighted-word">White (9.5%)</span>.
+              </div>
+            </div>
+          </p>
+          
+        </div>
+      </div>
+      <div class="pure-u-2-3">
+        <div class="description description-right">
           <div id="stack_bar"  class="vis-container"></div>
         </div>
       </div>
     </div>
-    <!-- end pure grid group -->  
-
-
+    <!-- end pure grid group --> 
+    <br>
+    <br>
+    <br>
+    <br>
       
-  
+  <!-- Sources --> 
     <div class="pure-g">
-      <div class="pure-u-1-1 small-font">
-        <p>This visualisation is created by <a href="https://github.com/KadekSatriadi" target="_blank">Kadek Satriadi</a>. The datasource is <a href="#"" target="_blank">some data repository online</href>.</p>
+      <div class="pure-u-1-1">
+        <div class="sources">
+          <h4>Sources</h4>
+          <p>This visualisation is created by <a href="https://github.com/WongJunKang" target="_blank"></a>Wong Jun Kang</a>. The datasource is <a href="#" target="_blank">https://www.kaggle.com/danilzyryanov/arrests-data-by-new-york-police-department</href>.</p></a>
+            <h4>References</h4>
+            <p>Wikipedia. (n.d.).New York City. Retrieved from <a href="#" target="https://en.wikipedia.org/wiki/New_York_City">https://en.wikipedia.org/wiki/New_York_City</href>.</p></a>
+              <p>Wikipedia. (n.d.).Crime in New York City. Retrieved from The datasource is <a href="#" target="_blank">https://www.kaggle.com/danilzyryanov/arrests-data-by-new-york-police-department</href>.</p></a>
+                <p>Baker,A.(2009).New York on Track for fewest Homicides on Record. Retrieved from <a href="#" target="_blank">https://www.nytimes.com/2009/12/29/nyregion/29murder.html</href>.</p></a>
+                  <h4>Icons/Pictures used</h4>
+                  <p>http://clipart-library.com/clipart/1715360.htm<br>https://dlpng.com/png/6433863<br>https://www.pinclipart.com/pindetail/iiwihwJ_png-file-svg-png-icon-ranking-clipart/<br>https://www.pinclipart.com/downpngs/iTowmxi_transparent-background-conclusion-transparent-clipart/<br>
+                    https://www.flaticon.com/free-icon/age-range_2040944<br>https://www.pngfind.com/mpng/iomxwh_statue-of-liberty-png-statue-of-liberty-black/<br>http://www.myiconfinder.com/icon/bar-bars-chart-charts-color-bars-diagram-down-falling-sells-graph-report-results-statistics-stats-trend-graphs-trends/3495</p>
+        </div>
       </div>
     </div>
   
