@@ -7,7 +7,7 @@
   "mark": "bar",
   "encoding": {
     "x": {"aggregate": "count",  "axis":{
-      "title": "Offence Counts",
+      "title": "Number of Offences",
       "labelFontSize":20,
       "titleFontSize":20,
       "gridColor":"white"
