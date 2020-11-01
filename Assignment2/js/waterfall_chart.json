@@ -133,8 +133,8 @@
         "type": "text",
         "align": "right",
         "baseline": "middle",
-        "dx": 0,
-        "dy":0,
+        "dx": 20,
+        "dy":-20,
         "text":"Year 2009",
         "fontSize": 20,
         "fontStyle": "italic"
@@ -155,8 +155,8 @@
         "type": "text",
         "align": "left",
         "baseline": "middle",
-        "dx": -110,
-        "dy":20,
+        "dx": -90,
+        "dy":0,
         "text":"Fewest Homicides",
         "fontSize": 14,
         "fontStyle": "italic"
@@ -177,9 +177,31 @@
         "type": "text",
         "align": "left",
         "baseline": "middle",
-        "dx": -110,
-        "dy":40,
+        "dx": -100,
+        "dy":20,
         "text":"on Record in 3 Years",
+        "fontSize": 14,
+        "fontStyle": "italic"
+        },
+        "encoding": {
+        "color": {"value": "black"},
+        "opacity": {
+        "condition": {
+        "test": "datum['label'] == '2009'",
+        "value": 1
+        },
+        "value": 0
+        }
+        }
+        },
+        {
+        "mark": {
+        "type": "text",
+        "align": "left",
+        "baseline": "middle",
+        "dx": -70,
+        "dy":40,
+        "text":"(Baker, 2009)",
         "fontSize": 14,
         "fontStyle": "italic"
         },
