@@ -133,7 +133,7 @@
         "type": "text",
         "align": "right",
         "baseline": "middle",
-        "dx": 40,
+        "dx": 0,
         "dy":0,
         "text":"Year 2009",
         "fontSize": 20,
@@ -153,11 +153,11 @@
      {
         "mark": {
         "type": "text",
-        "align": "right",
+        "align": "left",
         "baseline": "middle",
-        "dx": 180,
+        "dx": -110,
         "dy":20,
-        "text":"New York on Track for fewest Homicides on Record",
+        "text":"Fewest Homicides",
         "fontSize": 14,
         "fontStyle": "italic"
         },
@@ -175,11 +175,11 @@
         {
         "mark": {
         "type": "text",
-        "align": "right",
+        "align": "left",
         "baseline": "middle",
-        "dx": 210,
+        "dx": -110,
         "dy":40,
-        "text":"which have the fewest homicide in three years (Baker,2009)",
+        "text":"on Record in 3 Years",
         "fontSize": 14,
         "fontStyle": "italic"
         },
