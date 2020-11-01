@@ -127,7 +127,73 @@
       {"field": "label", "type": "ordinal", "title": "Year"},
       {"field": "sum", "type": "quantitative", "title": "Offence Counts"}]
       }
-    }
+    },
+         {
+        "mark": {
+        "type": "text",
+        "align": "right",
+        "baseline": "middle",
+        "dx": 40,
+        "dy":-140,
+        "text":"Year 2009",
+        "fontSize": 20,
+        "fontStyle": "italic"
+        },
+        "encoding": {
+        "color": {"value": "black"},
+        "opacity": {
+        "condition": {
+        "test": "datum['label'] == '2009'",
+        "value": 1
+        },
+        "value": 0
+        }
+        }
+        },
+     {
+        "mark": {
+        "type": "text",
+        "align": "right",
+        "baseline": "middle",
+        "dx": 180,
+        "dy":-120,
+        "text":"New York on Track for fewest Homicides on Record",
+        "fontSize": 14,
+        "fontStyle": "italic"
+        },
+        "encoding": {
+        "color": {"value": "black"},
+        "opacity": {
+        "condition": {
+        "test": "datum['label'] == '2009'",
+        "value": 1
+        },
+        "value": 0
+        }
+        }
+        },
+        {
+        "mark": {
+        "type": "text",
+        "align": "right",
+        "baseline": "middle",
+        "dx": 210,
+        "dy":-100,
+        "text":"which have the fewest homicide in three years (Baker,2009)",
+        "fontSize": 14,
+        "fontStyle": "italic"
+        },
+        "encoding": {
+        "color": {"value": "black"},
+        "opacity": {
+        "condition": {
+        "test": "datum['label'] == '2009'",
+        "value": 1
+        },
+        "value": 0
+        }
+        }
+        }
   ],
   "config": {"text": {"fontWeight": "bold", "color": "#404040"}}
 }
