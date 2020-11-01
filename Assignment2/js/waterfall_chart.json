@@ -134,7 +134,7 @@
         "align": "right",
         "baseline": "middle",
         "dx": 40,
-        "dy":-140,
+        "dy":0,
         "text":"Year 2009",
         "fontSize": 20,
         "fontStyle": "italic"
@@ -156,7 +156,7 @@
         "align": "right",
         "baseline": "middle",
         "dx": 180,
-        "dy":-120,
+        "dy":20,
         "text":"New York on Track for fewest Homicides on Record",
         "fontSize": 14,
         "fontStyle": "italic"
@@ -178,7 +178,7 @@
         "align": "right",
         "baseline": "middle",
         "dx": 210,
-        "dy":-100,
+        "dy":40,
         "text":"which have the fewest homicide in three years (Baker,2009)",
         "fontSize": 14,
         "fontStyle": "italic"
